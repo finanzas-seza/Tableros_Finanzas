@@ -22,6 +22,10 @@ a{color:var(--blue)}
 header.top{position:sticky;top:0;z-index:20;background:var(--blue);margin-inline:-16px;padding:0 16px 10px;border-bottom:1px solid var(--grid);box-shadow:var(--shadow)}
 .bar3{display:flex;height:6px;margin-inline:-16px}.bar3 i{display:block;flex:1}
 .bar3 i:nth-child(1),.bar3 i:nth-child(3){background:var(--navy)}.bar3 i:nth-child(2){background:var(--red)}
+.back-row{max-width:1280px;margin:10px auto 0}
+.back-to-dashboard{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.35);border-radius:8px;text-decoration:none;font-size:13px;font-weight:700;transition:background .2s ease,color .2s ease,transform .2s ease}
+.back-to-dashboard:hover{background:#fff;color:var(--navy);transform:translateY(-1px)}
+.back-to-dashboard:focus-visible{outline-color:#fff}
 .toprow{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 24px;margin-top:10px;max-width:1280px;margin-inline:auto}
 .kicker{font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--navy)}
 .brand h1{font-size:24px;line-height:1.2;margin:2px 0 0;font-weight:700;color:var(--navy)}
@@ -132,6 +136,9 @@ header.top .pill.active{background:#fff;color:var(--navy);box-shadow:none}
 <div class="wrap">
 <header class="top">
   <div class="bar3"><i></i><i></i><i></i></div>
+  <div class="back-row">
+    <a href="index.html" class="back-to-dashboard" aria-label="Volver al tablero principal">← Volver al tablero</a>
+  </div>
   <div class="toprow">
     <div class="brand">
       <span class="kicker">Finanzas · GSG</span>
@@ -542,3 +549,4 @@ renderAll();
 </script>
 
 </body></html>
+
