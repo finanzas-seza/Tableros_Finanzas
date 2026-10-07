@@ -28,6 +28,15 @@
   .bar3 i:nth-child(2){background:var(--red);}
   .bar3 i:nth-child(3){background:var(--navy);}
   header.hero .wrap{padding:20px 20px 0;}
+  .back-to-dashboard{
+    display:inline-flex; align-items:center; gap:8px; margin:0 0 14px;
+    padding:8px 14px; background:rgba(255,255,255,.12); color:#fff;
+    border:1px solid rgba(255,255,255,.32); border-radius:8px;
+    text-decoration:none; font-size:13px; font-weight:700;
+    transition:background .2s ease, color .2s ease, transform .2s ease;
+  }
+  .back-to-dashboard:hover{background:#fff; color:var(--navy); transform:translateY(-1px);}
+  .back-to-dashboard:focus-visible{outline:2px solid #fff; outline-offset:2px;}
   .kicker{font-size:11px; letter-spacing:.12em; text-transform:uppercase; font-weight:700; color:#C7CEDC; display:block;}
   header.hero h1{margin:2px 0 0; font-size:26px; font-weight:700; letter-spacing:.2px; color:#fff;}
   header.hero h1::after{content:""; display:block; width:44px; height:3px; background:var(--red); margin-top:8px; border-radius:2px;}
@@ -242,6 +251,7 @@
 <header class="hero">
   <div class="bar3"><i></i><i></i><i></i></div>
   <div class="wrap">
+    <a href="index.html" class="back-to-dashboard" aria-label="Volver al tablero principal">← Volver al tablero</a>
     <span class="kicker">Finanzas &middot; SHIP</span>
     <h1>Auditoría Nómina vs. Facturado</h1>
     <span class="sub-date">Informaci&oacute;n actualizada hasta el 16 de septiembre de 2026</span>
